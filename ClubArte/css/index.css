@@ -1,14 +1,24 @@
 
 #logo_navegacion {
-    width: 300px;
-    height: 100%;
+    width: 50px;
+    height: 50px;
+}
+
+#contenedor_img_usuario {
+    width: 50px;
+    height: 50px;
 }
 
 
 #barra_navegacion {
-    wrap: wra;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-content: center;
+    background-color: black;
+    color: white;
     width: 100%;
-    padding: 10px 0 7px 0;
+    padding: 10px 0 10px 0;
     top: 0;
     left: 0;
     right: 0;
