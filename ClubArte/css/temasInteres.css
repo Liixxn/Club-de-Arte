@@ -1,0 +1,109 @@
+/*header*/
+.logo_index {
+    float: left;
+    width: 50px;
+    height: 50px;
+}
+
+#logo_user_navigation_bar {
+    float: right;
+    width: 50px;
+    height: 50px;
+}
+
+.navigation_bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left:0;
+    right: 0;
+    height: 60px;
+    background-color: black;
+    margin-bottom: 40px;
+    border-bottom: 0.1em solid white;
+}
+
+.navigation_bar ul {
+    list-style: none;
+    text-align: center;
+}
+
+.navigation_bar ul li {
+    display: inline-block;
+}
+
+.navigation_bar ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #aaa;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 10px;
+}
+
+.navigation_bar ul li a:hover {
+    text-decoration: underline darkorange;
+}
+
+.logo_index:hover {
+    cursor: pointer;
+}
+
+#logo_user_navigation_bar:hover {
+    cursor: pointer;
+}
+
+/*body*/
+
+.cajas{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 15px;
+    padding: 15px;
+    background-color: rgb(115, 60, 175);
+}
+
+.caja_texto{
+    text-align: center;
+    background-color: white;
+}
+
+#actividades{
+    background-color: white;
+    width: 50%;
+    padding: 5%;
+    padding-left: 5%;
+}
+
+#mainImage{
+    height: 50%;
+    width: 100%;
+}
+
+#banner {
+    background-image: url("../imgs/portada_1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+}
+
+/*footer*/
+
+footer{
+    text-align: center;
+    padding: 1px;
+    background-color: black;
+    color: white;
+}
+
+table{
+    margin: 5%;
+    padding-left: 60%;
+}
+
