@@ -9,39 +9,100 @@
     <title>Club de arte</title>
     <link rel="icon" type="imgs/png" href="imgs/clubArte_logo.png">
     <link rel="stylesheet" href="css/index.css">
-    <script type="text/javascript" src="js/index.js"></script>
+
+
 </head>
 <body>
     <header>
-        <nav id="barra_navegacion">
-            <img id="logo_navegacion" src="imgs/clubArte_logo.png" alt="Logo del club de Arte">
-            <a href="index.html" target="_self">Home</a>
-            <a href="activities.html">Actividades</a>
-            <a href="abtus.html">About Us</a>
-            <a href="forum.html" target="_self">Foro</a>
-            <div id="contenedor_img_usuario">
-                <a id="img_usuario" href="login.html" ><img src="imgs/user-avatar.png"></a>
-            </div>
-
+        <nav class="navigation_bar">
+            <a href="index.html"><img class="logo_index" src="imgs/clubArte_logo.png"
+                                      alt="Logo del club de arte"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="temasInteres.html">Actividades</a></li>
+                <li><a href="forum.html">Foro</a></li>
+                <li><a href="aboutUs.html">About us</a></li>
+            </ul>
+            <a href="register.html"><img id="logo_user_navigation_bar" src="imgs/user-avatar.png"
+                                         alt="Imagen del perfil del usuario"></a>
         </nav>
     </header>
 
-    
+    <section id="section_banner_index">
+        <div id="container_banner_index">
+            <img id="banner_index" src="imgs/banner-index.png" alt="Banner de bienvenida al club de arte">
+        </div>
+    </section>
+
+
+
+    <section id="section_events">
+
+        <div id="container_carousel">
+
+            <div id="container_controls">
+                <button id="btn_left" onclick=previous() aria-label="Previous">ᐊ</button>
+                <button id="btn_right" onclick=next() aria-label="Next">ᐅ</button>
+            </div>
+
+
+            <div id="carousel_imgs">
+                <div class="carousel-item">
+                    <img id="img_1" src="imgs/painting.jpg" alt="Imagen de pintura">
+                </div>
+                <div class="carousel-item">
+                    <img id="img_2" src="imgs/cine.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img id="img_3" src="imgs/sculture.jpg" alt="Third slide">
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+
+    </section>
+
+    <section id="section_calendar">
+        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%238E24AA&ctz=Europe%2FMadrid&showPrint=0&showTabs=0&showCalendars=1&showTz=0&showTitle=0&showNav=1&src=ZXMuc3BhaW4jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%230B8043"
+                style="border:solid 1px #777" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+    </section>
+
+
+
 
 
     <footer>
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="columna">
-                    <h3>Contactos</h3>
-                    <ul>
-                        <li>Teléfono</li>
-                        <li>Correo</li>
-
-                    </ul>
-                </div>
-            </div>
+            <table class="default">
+                <tr>
+                    <th>Contactos</th>
+                    <th>Información legal</th>
+                </tr>
+                <tr>
+                    <td>C. Tajo, s/n, 28670 Villaviciosa de Odón, Madrid</td>
+                    <td>Política de privacidad</td>
+                </tr>
+                <tr>
+                    <td>Teléfono: 674 092 029</td>
+                    <td>Aviso legal</td>
+                </tr>
+                <tr>
+                    <td>Correo electrónico: clubArte@gmail.com</td>
+                    <td>Copyright</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Cancelación de suscripción</td>
+                </tr>
+            </table>
         </div>
     </footer>
+    <script type="text/javascript" src="js/index.js"></script>
+
 </body>
+
 </html>
