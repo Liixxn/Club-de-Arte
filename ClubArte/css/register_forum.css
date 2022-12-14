@@ -1,0 +1,165 @@
+
+html, body {
+    height: 100%;
+    border: #14213d;
+    margin: 0 0 0 0;
+}
+
+
+body {
+    background: url("../imgs/starryNightlowOpacity.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    object-fit: contain;
+}
+.generalDiv {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 1fr;
+    height: calc(100% - 20px);
+    object-fit: contain;
+
+
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header img{
+    height: calc(100% - 5px);/*<-- Yo puse 60px porque más o menos es lo que mide la altura del título, pero tú coloca un número de pixeles que se ajuste*/
+    object-fit: contain;
+    margin:15px 10px 10px 10px;
+}
+
+#body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 75%;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 40px 0 0 0;
+}
+#logoDiv{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    margin: 20px 0 0 10px;
+    padding: 0 0 30px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+#logoDiv img{
+
+    object-fit: contain;
+    width: 70%;
+    height: 70%;
+    margin: 0 auto 0 auto;
+}
+#logoDiv h2{
+    margin: 5% auto 0 auto;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+
+}
+#registerDiv{
+    display: flex;
+    margin: 0 0 10px 0;
+    height: 70%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#registerForm{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 40px;
+    grid-row-gap: 10px;
+    font-size: 1em;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    position: relative;
+    color: white;
+
+
+
+
+}
+
+#formulario{
+    margin: 13% auto 0 auto;
+    padding: 0 0 20px 0;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+
+
+label{
+    align-self: center;
+}
+
+
+
+.rellenables{
+    width: 200px;
+    margin: 2px auto;
+    padding: 0;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #fff;
+    font-size: 1em;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: black;
+}
+
+#inicioSesion{
+    padding: 2px 10px;
+    margin: 0 10px 0 0;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #14213d;
+    font-size: 1.2em;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
+}
+
+#submitButton{
+    width: auto;
+    margin: 0 auto 0 auto;
+    padding: 5px 20px;
+    border: 1px solid #ccc;
+    background: #14213d;
+    font-size: 1.2em;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+#submitButton:hover, #inicioSesion:hover{
+    background: firebrick;
+    color: #fff;
+    cursor: pointer;
+}
+
+footer{
+    text-align: center;
+    padding: 1px;
+    background-color: black;
+    color: white;
+}
+
+table{
+    margin: 5%;
+    padding-left: 60%;
+}
+
+

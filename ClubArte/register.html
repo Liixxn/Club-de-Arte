@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Registrate aquí!</title>
+    <link rel="stylesheet" href="css/register_forum.css">
+    <link rel="icon" type="imgs/png" href="imgs/clubArte_logo.png">
+</head>
+<body>
+<div class="generalDiv">
+    <div id="header">
+        <img src="imgs/clubArte_logo.png" alt="logo">
+        <p>Ya tienes una cuenta?
+        <input id="inicioSesion" type="button" value="Inicia Sesion" alt="¿Ya tienes Cuenta? ¡Inicia sesión!">
+        </p>
+    </div>
+
+    <div id="body">
+        <div id="logoDiv">
+            <h2>¡Al registrarte podrás participar y enterarte de todas las actividades que se realizan en el club!</h2>
+            <img src="imgs/clubArte_logo.png" alt="logo del club" id="logoClub">
+        </div>
+        <div id="registerDiv">
+            <form action="register.php" method="post" id="formulario">
+                <div id="registerForm">
+                    <label for="name">Nombre:</label>
+                    <input class="rellenables" type="text" name="name" id="name" placeholder="Nombre" required>
+                    <label for="lastname">Apellido:</label>
+                    <input class="rellenables" type="text" name="lastname" id="lastname" placeholder="Apellido" required>
+                    <label  for="email">Correo electrónico:</label>
+                    <input class="rellenables" type="email" name="email" id="email" placeholder="Correo electrónico" required>
+                    <label for="password">Contraseña:</label>
+                    <input class="rellenables" type="password" name="password" id="password" placeholder="Contraseña" required>
+                    <label for="password2">Confirmar contraseña:</label>
+                    <input class="rellenables" type="password" name="password2" id="password2" placeholder="Confirmar contraseña" required>
+                </div>
+
+            </form>
+            <input type="submit" value="Registrarse" id="submitButton">
+
+        </div>
+    </div>
+<link rel="script">
+    <script src="js/register_forum.js"></script>
+</div>
+<footer>
+    <div class="container">
+        <table class="default">
+            <tr>
+                <th>Contactos</th>
+                <th>Información legal</th>
+            </tr>
+            <tr>
+                <td>C. Tajo, s/n, 28670 Villaviciosa de Odón, Madrid</td>
+                <td>Política de privacidad</td>
+            </tr>
+            <tr>
+                <td>Teléfono: 674 092 029</td>
+                <td>Aviso legal</td>
+            </tr>
+            <tr>
+                <td>Correo electrónico: clubArte@gmail.com</td>
+                <td>Copyright</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Cancelación de suscripción</td>
+            </tr>
+        </table>
+    </div>
+</footer>
+</body>
+</html>
