@@ -1,16 +1,152 @@
-@import url('https://fonts.googleapis.com/css?family=Arbutus Slab');
-@import url('https://fonts.googleapis.com/css?family=Artifika');
-@import url('https://fonts.googleapis.com/css?family=Bebas Neue');
 
-html, body {
-    margin:0;
-    padding:0;
+
+
+
+
+* {
+    box-sizing: border-box;
 }
 
-#user-info h3 {
-    margin-top: 5px;
-    font-family: 'Arbutus Slab';
-    font-size: 20px;
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #dec6fc;
+}
+
+
+
+
+
+/* OPCIONES DEL SCROLL */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    background-color: black;
+}
+
+::-webkit-scrollbar:window-inactive {
+    display: none;
+}
+
+::-webkit-scrollbar-track-piece {
+    border-radius: 6px;
+    background-color: #40028d;
+    background-clip: content-box;
+    border: solid 4px transparent;
+}
+
+::-webkit-scrollbar-track-piece:decrement {
+    background: #F2BFF2;
+    background-clip: content-box;
+    border: solid 4px transparent;
+}
+
+
+::-webkit-scrollbar-thumb  {
+    height: 1px;
+    width: 3px;
+    background-color: #0bb4b7;
+    border-radius: 6px;
+}
+::-webkit-scrollbar-corner {
+    background: transparent ;
+}
+
+::-webkit-scrollbar-track-piece:no-button {
+    background-color: red;
+}
+
+
+/* MENU */
+
+.menu-user{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.come-back-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.container-list-menu-user {
+    height: 100%;
+}
+
+.container-list-menu-user ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.container-list-menu-user li {
+    list-style: none;
+}
+
+.container-list-menu-user li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+.container-list-menu-user li a:hover {
+    color: #F2BFF2;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .menu-user-bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    .menu-user {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .container-list-menu-user {
+        display: none;
+        width: 100%;
+    }
+
+    .container-list-menu-user ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .container-list-menu-user ul li {
+        text-align: center;
+    }
+
+    .container-list-menu-user ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .container-list-menu-user.active {
+        display: flex;
+    }
 }
 
 
@@ -18,13 +154,15 @@ html, body {
 
 
 
-/* PARTE DE ARRIBA DEL PERFIL */
+
+
+/* IMAGEN USUARIO Y FONDO */
 
 #section_user_profile {
     width: 100%;
-    height: 300px;
-    border-bottom: 2px solid black;
-
+    height: 450px;
+    background-color: white;
+    border: 2px solid black;
 
 }
 
@@ -46,7 +184,7 @@ html, body {
     width: 100%;
     height: 300px;
     top: 0;
-    background-image: url("https://images.pexels.com/photos/1255372/pexels-photo-1255372.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-image: url("https://images.pexels.com/photos/957040/night-photograph-starry-sky-night-sky-star-957040.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -56,7 +194,7 @@ html, body {
 
 }
 
-#user-info {
+#username {
     width: 100%;
     height: 90px;
     text-align: center;
@@ -68,89 +206,138 @@ html, body {
 
 
 
-/* SUBMENU */
 
-.submenu-user-profile {
-    width: 100%;
-    height: 40px;
-    list-style: none;
-    padding:0;
-    position:absolute;
-    left:0;
-    margin-top: 150px;
-    background-color: black;
+
+
+/* CALENDARIO */
+#container-calendar {
+    margin: 20px;
 }
-
-.submenu-user-profile li {
-    display: inline;
-    float: left;
-
-}
-
-
-.submenu-user-profile a {
-    width: 100%;
-    height: 100%;
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: white;
-    background-color: black;
-    font-family: 'Artifika';
-}
-
-.submenu-user-profile a:hover{
-    background-color: #ca6702;
-    color: black;
-    transition: all 0.3s ease;
-}
-
-
-
-
-
-
-/* DIVS DEL MENU */
-
-
-#info-user {
-    height: 100%;
-    display: grid;
-    margin: 220px 20px 0 20px;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    gap: 10px;
+#title-calendar {
     text-align: center;
-    padding:10px;
-
 }
 
-#info-user div {
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* DATOS */
+
+
+#title-info-user {
+    margin: 50px 0 0 0;
+    text-align: center;
+}
+
+
+
+.user-data {
     width: 100%;
     height: 100%;
-    border: 1px solid black;
-    text-align: center;
-    box-shadow: 5px 5px #a45d3c;
-    background: linear-gradient(170deg, white 80%, #eee4e1);
-    opacity: 50%;
+    display: flex;
+    justify-content: center;
 }
 
-#info-user div:hover {
+.info-user {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+
+
+}
+
+
+.info-user div {
+    margin-bottom: 10px;
+    width: 100%;
+    height: 50%;
+
+    box-shadow: 5px 5px #AF57ED;
+    background: linear-gradient(170deg, white 80%, #e5caff);
     opacity: 100%;
+    text-align: center;
 }
 
 
-#info-user h3{
-    font-family: 'Bebas Neue';
-    font-size: 20px;
+
+
+
+
+#user-count {
+    width: 30%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 
 }
 
-#info-user h3:hover{
-    color: #2a9d8f;
-    scale: 1.1;
-    transition: all 0.3s ease;
+.div-likes-count,
+.div-saves {
+    width: 100%;
+    box-shadow: 5px 5px #AF57ED;
+    text-align: center;
+    background: linear-gradient(170deg, white 80%, #e5caff);
 }
+
+
+#user-count div img {
+    width: 150px;
+    height: 150px;
+}
+
+
+
+@property --num {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+}
+
+#number-likes-count {
+    transition: --num 1s;
+    counter-set: num var(--num);
+    font: 800 40px system-ui;
+    border: none;
+}
+#number-likes-count::after {
+    content: counter(num);
+}
+
+#number-likes-count:hover {
+    --num: 10;
+}
+
+
+
+#number-saves-count {
+    transition: --num 1s;
+    counter-set: num var(--num);
+    font: 800 40px system-ui;
+    border: none;
+}
+#number-saves-count::after {
+    content: counter(num);
+}
+
+#number-saves-count:hover {
+    --num: 30;
+}
+
+
+
 
 
 

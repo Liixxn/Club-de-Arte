@@ -3,18 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>Club de Arte</title>
-  <link rel="icon" type="imgs/png" href="imgs/clubArte_logo.png">
-  <link rel="stylesheet" href="css/user-profile.css">
-  <script type="text/javascript" src="js/user-profile.js"></script>
+    <link rel="icon" type="imgs/png" href="imgs/clubArte_logo.png">
+    <link rel="stylesheet" href="css/user-profile.css">
+
 
 
 </head>
 <body>
 
+  <header>
+    <nav class="menu-user">
+      <div class="container-back">
+        <a href="index.html"><img class="come-back-icon" src="imgs/back.png"
+                                  alt="Icono para volver atrás"></a>
+      </div>
+      <a href="#" class="toggle-button">
+        <span class="menu-user-bar"></span>
+        <span class="menu-user-bar"></span>
+        <span class="menu-user-bar"></span>
+      </a>
+      <div class="container-list-menu-user">
+        <ul>
+          <li><a href=#container-info-user>Datos</a></li>
+          <li><a href="#">Configuración</a></li>
+          <li><a href="#">Publicaciones</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+  </header>
+
+
+
   <section id="section_user_profile">
     <div id="background-image-user-profile">
       <div id="image-user-profile">
-        <div id="user-info">
+        <div id="username">
           <h3>Nombre</h3>
           <p>Estado</p>
         </div>
@@ -23,22 +48,25 @@
   </section>
 
 
-  <section id="section-submenu-user">
-    <div id="user-profile-submenu">
-      <ul class="submenu-user-profile">
-        <li class="user-information"><a href="#container-info-user">Datos</a>
-        </li>
-        <li class="user-posts"><a href="#">Publicaciones</a>
-        </li>
-        <li class="user-config"><a href="#">Configuración</a>
-      </ul>
-    </div>
 
-  </section>
+  <div id="container-calendar">
+    <div id="title-calendar">
+      <h3> Mi Calendario</h3>
+    </div>
+    <iframe src="https://embed.styledcalendar.com/#lGB6HdnoM3AmBFTMGyxi"
+            title="Styled Calendar" class="styled-calendar-container" style="width: 100%; border: none;"
+            data-cy="calendar-embed-iframe"></iframe>
+    <script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js"></script>
+  </div>
+
 
 
   <div id="container-info-user">
-      <div id="info-user">
+    <div id="title-info-user">
+        <h3>Mi Información</h3>
+    </div>
+    <div class="user-data">
+      <div class="info-user">
         <div id="div-nombre">
           <h3>Nombre</h3>
           <p>XXXXX</p>
@@ -69,32 +97,30 @@
         </div>
       </div>
 
-  </div>
 
-  <div id="container-calendar-user">
-    <div id="calendar-user">
-      
-
+      <div id="user-count">
+        <div class="div-likes-count">
+          <h3>Likes</h3>
+          <img src="imgs/like.png">
+          <div id="number-likes-count"></div>
+        </div>
+        <div class="div-saves">
+          <h3>Guardados</h3>
+          <img src="imgs/bookmark.png">
+          <div id="number-saves-count"></div>
+      </div>
     </div>
-
-
   </div>
 
 
 
 
 
-
-  <div id="container-posts-user">
-    <div id="posts-user">
-
-    </div>
-
-  </div>
 
 
 
 
 
 </body>
+  <script type="text/javascript" src="js/user-profile.js"></script>
 </html>

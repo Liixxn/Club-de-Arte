@@ -2,178 +2,436 @@
 html, body {
     margin:0;
     padding:0;
+    background-color: #dec6fc;
 
+}
+
+
+/* OPCIONES DEL SCROLL */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    background-color: black;
+}
+
+::-webkit-scrollbar:window-inactive {
+    display: none;
+}
+
+::-webkit-scrollbar-track-piece {
+    border-radius: 6px;
+    background-color: #40028d;
+    background-clip: content-box;
+    border: solid 4px transparent;
+}
+
+::-webkit-scrollbar-track-piece:decrement {
+    background: #F2BFF2;
+    background-clip: content-box;
+    border: solid 4px transparent;
+}
+
+
+::-webkit-scrollbar-thumb  {
+    height: 1px;
+    width: 3px;
+    background-color: #0bb4b7;
+    border-radius: 6px;
+}
+::-webkit-scrollbar-corner {
+    background: transparent ;
+}
+
+::-webkit-scrollbar-track-piece:no-button {
+    background-color: red;
+}
+
+
+
+body {
+    z-index: 1;
 }
 
 
 
 
 
-/* BANNER */
-
-#section_banner_index {
-    width:100%;
-    height: 100%;
-}
 
 
-#banner_index {
-    width:100%;
-    height: 100%;
+
+/* SECCION BARRA DE NAVEGACION */
+
+.navigation_bar {
+    z-index: 2;
+    position: fixed;
+    top: 0;
     left: 0;
-    right: 0;
+    width: 100%;
+    height: 65px;
+    background-color: black;
+}
+
+.container_navigation_bar {
+    width: 100%;
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px white;
 }
 
 
-
-
-
-
-/* BARRA NAVEGACION */
+.container_logo {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: inherit;
+}
 
 .logo_index {
+    width: 60px;
+    height: inherit;
+}
+
+.container_logo a {
+    display: flex;
+    align-items: center;
+    color: white;
+
+}
+
+
+.container_list_menu {
+    width: 100%;
+    height: inherit;
+}
+
+#list_main_menu {
+    width: 100%;
+    height: inherit;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+
+#list_main_menu li a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 0 10px 0 10px;
+
+}
+
+#list_main_menu li a:hover{
+    color: #F2BFF2;
+
+}
+
+
+
+#list_main_menu > li {
     float: left;
-    width: 50px;
-    height: 50px;
+    position: relative;
+    perspective: 1000px;
+}
+
+
+
+
+
+
+#item-temas {
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    align-items: center;
+
+}
+
+.container_actividades_menu {
+    margin-top: 19px;
+}
+
+
+
+#list_submenu_index {
+    position: absolute;
+    left:0;
+    width: 100%;
+    overflow: hidden;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid white;
+
+}
+
+#list_submenu_index li {
+    padding-top: 15px;
+}
+
+
+#list_main_menu #item-temas:hover ul {
+    text-decoration: none;
+    list-style: none;
+    margin-top: 19px;
+    visibility: visible;
+    opacity:1;
+    background-color: black;
+    backdrop-filter: blur(10px);
+    animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top center;
+
+}
+
+@keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.1)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+}
+
+
+
+#list_submenu_index li:hover a{
+    color: #6810C7;
+}
+
+
+
+
+.container_expand_menu:hover {
+    cursor: pointer;
+
+}
+
+.container_user {
+    width: 60px;
+    height: inherit;
+    float: right;
+    display: flex;
 }
 
 #logo_user_navigation_bar {
-    float: right;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: inherit;
 }
 
-.navigation_bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+
+@media screen and (max-width: 800px) {
+
+    .container_navigation_bar {
+        position: relative;
+    }
+
+    .container_user {
+        position: fixed;
+        right: 0;
+    }
+
+
+
+
+    #list_main_menu {
+        visibility: hidden;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+/* SECCION BANNER */
+
+#section_banner_index {
+    margin-top: 65px;
+    border-bottom: 2px solid black;
+}
+
+
+.carousel-control-prev:hover{
+    color: black;
+    backdrop-filter: blur(5px);
+}
+.carousel-control-next:hover {
+    color: black;
+    backdrop-filter: blur(5px);
+}
+
+.carousel-control-prev:hover .button-icon {
+    scale: 3;
+}
+
+.carousel-control-next:hover .button-icon {
+    scale: 3;
+}
+
+
+
+
+
+
+
+
+/* SECCION CALENDARIO */
+
+#section_calendar {
+    margin: 32px;
+}
+
+#title-calendar {
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+/* SECCION TEMAS */
+
+#interests-cards {
+    margin: 50px 20px 50px 20px;
+}
+
+.col {
+    padding: 50px;
+}
+
+.h-100.card {
+    border:none;
+    border-radius: 10px;
+    box-shadow: 5px 5px #AF57ED;
+    opacity: 0.6;
+
+}
+
+.h-100.card:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    transition: 0.5s;
+
+}
+
+.h-100.card img{
     width: 100%;
-    position: fixed;
-    top: 0;
-    left:0;
-    right: 0;
-    height: 60px;
-    background-color: black;
-    margin-bottom: 40px;
-    border-bottom: 0.1em solid white;
-}
-
-.navigation_bar ul {
-    list-style: none;
-    text-align: center;
-}
-
-.navigation_bar ul li {
-    display: inline-block;
-}
-
-.navigation_bar ul li a {
-    display: block;
-    padding: 15px;
-    text-decoration: none;
-    color: #aaa;
-    font-weight: 800;
-    text-transform: uppercase;
-    margin: 0 10px;
-}
-
-.navigation_bar ul li a:hover {
-    text-decoration: underline darkorange;
-}
-
-.logo_index:hover {
-    cursor: pointer;
-}
-
-#logo_user_navigation_bar:hover {
-    cursor: pointer;
-}
-
-
-
-
-
-
-/* CAROUSEL */
-
-
-#section_events {
-    left: 0;
-    right: 0;
-    background-color: white;
-}
-
-#container_carousel {
-    width: 100%;
-    height: 400px;
-    background-color: black;
-}
-
-
-#carousel_imgs {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 100%;
-
-}
-
-.carousel-item img{
-    width: 400px;
     height: 300px;
-    margin: 0 10px 0 10px;
+
+}
+
+.tag {
+    background: #cccccc;
+    border-radius: 50px;
+    font-size: 12px;
+    margin: 0;
+    color: #fff;
+    padding: 2px 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+
+.tag.tag-pintura {
+    background: #D40E0E;
+}
+.tag.tag-musica {
+    background: #0A49DA;
+}
+.tag.tag-escultura {
+    background: #bb8003;
+}
+.tag.tag-literatura {
+    background: #FA1F97;
+}
+.tag.tag-cine {
+    background: #e8db35;
+}
+.tag.tag-fotografia {
+    background: #47bcd4;
 }
 
 
-#container_controls {
-    display:flex;
-    justify-content: flex-end;
+.hover-image {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+@media screen and (max-width: 800px) {
+
+    .h-100.card img{
+        width: inherit;
+        height: inherit;
+
+    }
+
+}
+
+.card-footer {
+    border: none;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-#btn_left {
-    width: 50px;
-    height: 50px;
-    float: left;
-    color: white;
-    background-color: black;
-}
-
-#btn_right {
-    width: 50px;
-    height: 50px;
-    float: right;
-    background-color: black;
-    color: white;
-}
-
-#btn_left:hover {
+.btn-wiki {
+    border: 5em;
     cursor: pointer;
-    opacity: 0.7;
-}
-
-#btn_right:hover {
-    cursor: pointer;
-    opacity: 0.7;
-}
-
-
-
-
-
-
-/* FOOTER */
-
-footer{
-    text-align: center;
-    padding: 1px;
-    background-color: black;
+    outline: none;
+    font-size: 14px;
+    -webkit-transform: translate(0);
+    transform: translate(0);
+    background-image: linear-gradient(45deg, #4568dc, #b06ab3);
+    padding: 0.7em 2em;
+    border-radius: 1px;
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.438);
+    -webkit-transition: box-shadow 0.25s;
+    transition: box-shadow 0.25s;
     color: white;
 }
 
-table{
-    margin: 5%;
-    padding-left: 60%;
+.btn-wiki span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
 }
+
+.btn-wiki span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.btn-wiki:hover span {
+    padding-right: 25px;
+}
+
+.btn-wiki:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+
 
 
