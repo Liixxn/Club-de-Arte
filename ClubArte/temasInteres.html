@@ -11,6 +11,8 @@
     <title>Temas de interes + actividades</title>
     <link rel="icon" type="imgs/png" href="imgs/clubArte_logo.png">
     <link rel="stylesheet" href="css/temasInteres.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/temasInteres.js"></script>
 </head>
 <body>
 
@@ -28,16 +30,68 @@
     </header>
 
     <div id="banner">
-        
     </div>  
 
     <div class="cajas">
-        <div class="caja_texto"><h2>Foro</h2>
+        <div class="caja_foro"><h2>Foro</h2>
+            <div class="forum-container">
+                <div class="forum-content">
+                    <div class="forum-content-header">
+                        <h2>¿Qué es el arte?</h2>
+                        <p>Por: <span>Usuario 1</span></p>
+                    </div>
+                    <div class="forum-content-body">
+                        <p>
+                            El arte es una actividad humana que consiste en
+                            la creación de obras de carácter estético,
+                            que pueden ser expresadas mediante diferentes maneras.
+                        </p>
+                    </div>
+                    <div class="forum-content-footer">
+                        <p>Comentarios: <span>5</span></p>
+                        <p>Fecha de publicación: <span>01/01/2020</span></p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="caja_texto"><h2>Actividades</h2>
-            <img id="actividades"  src="imgs/Taller_Infantil.jpg"  alt="actividades">
-            <button onclick="anterior()", id="anterior">Anterior</button>
-            <button onclick="siguiente()", id="siguiente">Siguiente</button>
+
+        <div class="caja_actividades"><h2>Actividades</h2>
+            <div class="slide">
+                <div class="slide-inner">
+                    <input class="slide-open" type="radio" id="slide-1" 
+                            name="slide" aria-hidden="true" hidden="" checked="checked">
+                    <div class="slide-item">
+                        <img src="imgs/635dbec96075400eb6c18599a9be2ad0.jpg">
+                    </div>
+                    <input class="slide-open" type="radio" id="slide-2" 
+                            name="slide" aria-hidden="true" hidden="">
+                    <div class="slide-item">
+                        <img src="imgs/Taller_Infantil.jpg">
+                    </div>
+                    <input class="slide-open" type="radio" id="slide-3" 
+                            name="slide" aria-hidden="true" hidden="">
+                    <div class="slide-item">
+                        <img src="imgs/taller-pintura-06-1024x675.jpg">
+                    </div>
+                    <label for="slide-3" class="slide-control prev control-1">‹</label>
+                    <label for="slide-2" class="slide-control next control-1">›</label>
+                    <label for="slide-1" class="slide-control prev control-2">‹</label>
+                    <label for="slide-3" class="slide-control next control-2">›</label>
+                    <label for="slide-2" class="slide-control prev control-3">‹</label>
+                    <label for="slide-1" class="slide-control next control-3">›</label>
+                    <ol class="slide-indicador">
+                        <li>
+                            <label for="slide-1" class="slide-circulo">•</label>
+                        </li>
+                        <li>
+                            <label for="slide-2" class="slide-circulo">•</label>
+                        </li>
+                        <li>
+                            <label for="slide-3" class="slide-circulo">•</label>
+                        </li>
+                    </ol>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -72,5 +126,4 @@
     
 
 </body>
-<script src="js/temasInteres.js"></script>
 </html>
