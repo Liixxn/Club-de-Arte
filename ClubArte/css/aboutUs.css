@@ -5,7 +5,7 @@
     height: 50px;
 }
 
-#logo_user_navigation_bar {
+#logo-usuario-barra-navegacion {
     float: right;
     width: 50px;
     height: 50px;
@@ -34,16 +34,16 @@ body {
     border-bottom: 0.1em solid white;
 }
 
-.navigation_bar ul {
+.barra_navegacion ul {
     list-style: none;
     text-align: center;
 }
 
-.navigation_bar ul li {
+.barra_navegacion ul li {
     display: inline-block;
 }
 
-.navigation_bar ul li a {
+.barra_navegacion ul li a {
     display: block;
     padding: 15px;
     text-decoration: none;
@@ -53,7 +53,7 @@ body {
     margin: 0 10px;
 }
 
-.navigation_bar ul li a:hover {
+.barra_navegacion ul li a:hover {
     text-decoration: underline darkorange;
 }
 
@@ -61,7 +61,7 @@ body {
     cursor: pointer;
 }
 
-#logo_user_navigation_bar:hover {
+#logo-usuario-barra-navegacion:hover {
     cursor: pointer;
 }
 

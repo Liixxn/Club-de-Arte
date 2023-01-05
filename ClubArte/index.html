@@ -22,44 +22,47 @@
 </head>
 <body>
     <header>
-        <nav class="navigation_bar">
-            <div class="container_navigation_bar">
-                <div class="container_logo">
-                    <a href="index.html"><img class="logo_index" src="imgs/clubArte_logo.png"
+        <nav class="barra_navegacion">
+            <!--<div class="contenedor_barra_navegacion">-->
+                <div class="contenedor_logo">
+                    <a href="https://universidadeuropea.com" target="_blank"><img class="logo_index" src="imgs/clubArte_logo.png"
                                               alt="Logo del club de arte">Universidad Europea</a>
                 </div>
-                <div class="container_list_menu">
-                    <ul id="list_main_menu">
+
+
+
+                <div class="contenedor_menu_lista">
+                    <ul id="lista_menu_principal">
                         <li><a href="index.html">Home</a></li>
-                        <li id="item-temas">
+                        <li id="actividades-temas">
                             <a href="temasInteres.html">Actividades</a>
-                            <div class="container_actividades_menu">
-                                <ul id="list_submenu_index">
-                                    <li><span><img src="imgs/palette.png" width="20%"><a href="">Pintura</a></span></li>
-                                    <li><span><img src="imgs/music.png" width="20%"><a href="">Música</a></span></li>
-                                    <li><span><img src="imgs/estatua.png" width="20%"><a href="">Escultura</a></span></li>
-                                    <li><span><img src="imgs/libro-magico.png" width="20%"><a href="">Literatura</a></span></li>
-                                    <li><span><img src="imgs/pelicula.png" width="20%"><a href="">Cine</a></span></li>
-                                    <li><span><img src="imgs/fotografia.png" width="20%"><a href="">Fotografía</a></span></li>
+                            <div class="contenedor_actividades_menu">
+                                <ul id="lista-submenu-index">
+                                    <li id="li-pintura"><span><img src="imgs/palette.png" width="20%"><a href="">Pintura</a></span></li>
+                                    <li id="li-musica"><span><img src="imgs/music.png" width="20%"><a href="">Música</a></span></li>
+                                    <li id="li-escultura"><span><img src="imgs/estatua.png" width="20%"><a href="">Escultura</a></span></li>
+                                    <li id="li-literatura"><span><img src="imgs/libro-magico.png" width="20%"><a href="">Literatura</a></span></li>
+                                    <li id="li-cine"><span><img src="imgs/pelicula.png" width="20%"><a href="">Cine</a></span></li>
+                                    <li id="li-fotografia"><span><img src="imgs/fotografia.png" width="20%"><a href="">Fotografía</a></span></li>
 
                                 </ul>
                             </div>
                         </li>
-                        <li><a href="forum.html">Foro</a></li>
-                        <li><a href="aboutUs.html">About us</a></li>
+                        <li id="li-foro"><a href="forum.html">Foro</a></li>
+                        <li id="li-about-us"><a href="aboutUs.html">About us</a></li>
 
                     </ul>
                 </div>
-                <div class="container_user">
-                    <a href="register.html"><img id="logo_user_navigation_bar" src="imgs/user-avatar.png"
+                <div class="contenedor-foto-usuario">
+                    <a href="register.html"><img id="logo-usuario-barra-navegacion" src="imgs/user-avatar.png"
                                                  alt="Imagen del perfil del usuario"></a>
                 </div>
-            </div>
+            <!--</div>-->
         </nav>
     </header>
 
 
-    <section id="section_banner_index">
+    <section id="seccion_carrusel_imgs">
 
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -89,9 +92,9 @@
 
 
 
-    <section id="section_calendar">
+    <section id="seccion_calendario">
 
-        <div id="title-calendar">
+        <div id="titulo_calendario">
             <h2>Calendario de actividades y eventos</h2>
         </div>
         <iframe src="https://embed.styledcalendar.com/#GcSDQPJO15GcPys8Me9g" title="Styled Calendar"
@@ -103,9 +106,9 @@
 
 
 
-    <section id="interests-cards">
+    <section id="seccion-cartas-interes">
 
-        <div id="title-interests">
+        <div id="titulo-interes">
             <h2>Temas de interés</h2>
         </div>
 
@@ -116,7 +119,10 @@
                     <div class="card-body">
                         <span class="tag tag-pintura">Pintura</span>
                         <h5 class="card-title">Pintura</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <blockquote class="referencia-temas">
+                            A veces hay que estropear un poquito el cuadro para poder terminarlo.
+                            <cite> Eugène Delacroix </cite>
+                        </blockquote>
                     </div>
                     <div class="card-footer">
                         <span><i class="fa-brands fa-wikipedia-w"></i></span>
@@ -133,7 +139,11 @@
                     <div class="card-body">
                         <span class="tag tag-musica">Música</span>
                         <h5 class="card-title">Música</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        <blockquote class="referencia-temas">
+                            En la música todos los sentimientos vuelven a su estado puro y el
+                            mundo no es sino música hecha realidad.
+                            <cite> Arthur Schopenhauer </cite>
+                        </blockquote>
                     </div>
                     <div class="card-footer">
                         <span><i class="fa-brands fa-wikipedia-w"></i></span>
@@ -148,7 +158,11 @@
                     <div class="card-body">
                         <span class="tag tag-escultura">Escultura</span>
                         <h5 class="card-title">Escultura</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        <blockquote class="referencia-temas">
+                            La escultura no consiste en el simple labrado de la forma de una cosa, sino el
+                            labrado de su efecto.
+                            <cite> John Ruskin </cite>
+                        </blockquote>
                     </div>
                     <div class="card-footer">
                         <span><i class="fa-brands fa-wikipedia-w"></i></span>
@@ -163,7 +177,11 @@
                     <div class="card-body">
                         <span class="tag tag-literatura">Literatura</span>
                         <h5 class="card-title">Literatura</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        <blockquote class="referencia-temas">
+                            Una buena novela nos dice la verdad sobre su protagonista; pero una mala nos
+                            dice la verdad sobre su autor.
+                            <cite> Gilbert Keith Chesterton </cite>
+                        </blockquote>
                     </div>
                     <div class="card-footer">
                         <span><i class="fa-brands fa-wikipedia-w"></i></span>
@@ -178,7 +196,12 @@
                     <div class="card-body">
                         <span class="tag tag-cine">Cine</span>
                         <h5 class="card-title">Cine</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        <blockquote class="referencia-temas">
+                            Un buen vino es como una buena película: dura un instante y te deja en la boca un sabor
+                            a gloria; es nuevo en cada sorbo y , como ocurre con las películas, nace y
+                            renace en cada saboreador.
+                            <cite> Federico Fellini </cite>
+                        </blockquote>
                     </div>
                     <div class="card-footer">
                         <span><i class="fa-brands fa-wikipedia-w"></i></span>
@@ -193,7 +216,10 @@
                     <div class="card-body">
                         <span class="tag tag-fotografia">Fotografía</span>
                         <h5 class="card-title">Fotografía</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        <blockquote class="referencia-temas">
+                            La fotografia es un secreto de un secreto. Cuanto mas te dice, menos sabes.
+                            <cite> Diane Arbus </cite>
+                        </blockquote>
                     </div>
                     <div class="card-footer">
                         <span><i class="fa-brands fa-wikipedia-w"></i></span>
@@ -204,41 +230,37 @@
             </div>
         </div>
 
-
-
     </section>
 
 
 
 
+<hr>
 
-
-    <footer>
+    <footer class="footer">
         <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Información</h4>
+                    <ul>
+                        <li><a href="#">Universidad Europea de Madrid</a></li>
+                        <li><a href="#">Correo electrónico: clubArte@gmail.com</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contáctanos</h4>
+                    <div class="relleno-informacion">
 
-
-            <table class="default">
-                <tr>
-                    <th>Contactos</th>
-                    <th>Información legal</th>
-                </tr>
-                <tr>
-                    <td>C. Tajo, s/n, 28670 Villaviciosa de Odón, Madrid</td>
-                    <td>Política de privacidad</td>
-                </tr>
-                <tr>
-                    <td>Teléfono: 674 092 029</td>
-                    <td>Aviso legal</td>
-                </tr>
-                <tr>
-                    <td>Correo electrónico: clubArte@gmail.com</td>
-                    <td>Copyright</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Cancelación de suscripción</td>
-                </tr>
-            </table>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Conócenos en persona</h4>
+                    <iframe class="goole-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6889.754931564399!2d-3.9162145900040786!3d40.3726724559064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd419031a94d45e5%3A0x375a8b6ca7a1dc4c!2sUniversidad%20Europea%20de%20Madrid!5e0!3m2!1ses!2ses!4v1672440888159!5m2!1ses!2ses"
+                            width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
         </div>
     </footer>
 
