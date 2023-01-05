@@ -11,153 +11,174 @@
     <title>¡Foro, comparte tus ideas!</title>
     <link rel="icon" type="imgs/png" href="imgs/clubArte_logo.png">
     <link rel="stylesheet" href="css/forum.css">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
 <header>
+    <nav class="barra_navegacion">
+        <!--<div class="contenedor_barra_navegacion">-->
+        <div class="contenedor_logo">
+            <a href="https://universidadeuropea.com" target="_blank"><img class="logo_index" src="imgs/clubArte_logo.png"
+                                                                          alt="Logo del club de arte">Universidad Europea</a>
+        </div>
 
-    <nav class="navigation_bar">
-        <a href="index.html"><img class="logo_index" src="imgs/clubArte_logo.png"
-                                  alt="Logo del club de arte"></a>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="temasInteres.html">Actividades</a></li>
-            <li><a href="forum.html">Foro</a></li>
-            <li><a href="aboutUs.html">About us</a></li>
-        </ul>
-        <a href="register.html"><img id="logo_user_navigation_bar" src="imgs/user-avatar.png"
+
+
+        <div class="contenedor_menu_lista">
+            <ul id="lista_menu_principal">
+                <li><a href="index.html">Home</a></li>
+                <li id="actividades-temas">
+                    <a href="temasInteres.html">Actividades</a>
+                    <div class="contenedor_actividades_menu">
+                        <ul id="lista-submenu-index">
+                            <li id="li-pintura"><span><img src="imgs/palette.png" width="20%"><a href="">Pintura</a></span></li>
+                            <li id="li-musica"><span><img src="imgs/music.png" width="20%"><a href="">Música</a></span></li>
+                            <li id="li-escultura"><span><img src="imgs/estatua.png" width="20%"><a href="">Escultura</a></span></li>
+                            <li id="li-literatura"><span><img src="imgs/libro-magico.png" width="20%"><a href="">Literatura</a></span></li>
+                            <li id="li-cine"><span><img src="imgs/pelicula.png" width="20%"><a href="">Cine</a></span></li>
+                            <li id="li-fotografia"><span><img src="imgs/fotografia.png" width="20%"><a href="">Fotografía</a></span></li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li id="li-foro"><a href="forum.html">Foro</a></li>
+                <li id="li-about-us"><a href="aboutUs.html">About us</a></li>
+
+            </ul>
+        </div>
+        <div class="contenedor-foto-usuario">
+            <a href="register.html"><img id="logo-usuario-barra-navegacion" src="imgs/user-avatar.png"
                                          alt="Imagen del perfil del usuario"></a>
+        </div>
+        <!--</div>-->
     </nav>
-    <div class="banner">
-    </div>
 </header>
+<div class="banner">
+</div>
 <main>
-    <div class="container">
-        <div class="forum">
-            <h1>Foro</h1>
-            <p>¡Comparte tus ideas!</p>
-            <div class="clasificaciones">
-                <select>
-                    <option value="0">Selecciona una categoría:</option>
-                    <option value="1">Pintura</option>
-                    <option value="2">Música</option>
-                    <option value="3">Cine</option>
-                    <option value="4">Escultura</option>
-                    <option value="5">Fotografía</option>
-                    <option value="6">Literatura</option>
+    <div class="container-fluid apartadoForo">
+        <div class="row" id="container-foro">
+            <div class="col-sm-12" id="div-clasificadores">
+                <select class="col-lg-2 col-sm-4 ">
+                    <option value="0">Obtener por:</option>
+                    <option value="1">Mostrar todo</option>
+                    <option value="2">Pintura</option>
+                    <option value="3">Música</option>
+                    <option value="4">Cine</option>
+                    <option value="5">Escultura</option>
+                    <option value="6">Fotografía</option>
+                    <option value="7">Literatura</option>
                 </select>
-                <select>
-                    <option value="0">Selecciona una categoría:</option>
-                    <option value="1">Pintura</option>
-                    <option value="2">Música</option>
-                    <option value="3">Cine</option>
-                    <option value="4">Escultura</option>
-                    <option value="5">Fotografía</option>
-                    <option value="6">Literatura</option>
-
-                </select>
-            </div>
-
-            <div class="forum-container">
-                <div class="forum-content">
-                    <div class="forum-content-header">
-                        <h2>¿Qué es el arte?</h2>
-                        <p>Por: <span>Usuario 1</span></p>
-                    </div>
-                    <div class="forum-content-body">
-                        <p>
-                            El arte es una actividad humana que consiste en
-                            la creación de obras de carácter estético,
-                            que pueden ser expresadas mediante diferentes maneras.
-                        </p>
-                    </div>
-                    <div class="forum-content-footer">
-                        <p>Comentarios: <span>5</span></p>
-                        <p>Fecha de publicación: <span>01/01/2020</span></p>
-                    </div>
+                <div id="aniadirbtnDiv" class="col-lg-3 col-sm-4">
+                    <button  data-toggle="collapse" data-target="#aniadirPubliDiv" class=" btnAniadirPub" type="button" value="Añadir Publicacion">
+                        + Añadir Publicacion</button>
                 </div>
-                    <div class="forum-content">
-                        <div class="forum-content-header">
-                            <h2>¿Porque es el arte lo mejor de la vida?</h2>
-                            <p>Por: <span>Usuario 2</span></p>
-                        </div>
-                        <div class="forum-content-body">
-                            <p>
-                                La vida es arte, el arte es vida. Siempre he pensado que el arte es una forma de vida,
-                                una forma de expresión, una forma de sentir, una forma de pensar, una forma de ser.
-                            </p>
-                        </div>
-                        <div class="forum-content-footer">
-                            <p>Comentarios: <span>5</span></p>
-                            <p>Fecha de publicación: <span>01/01/2020</span></p>
-                        </div>
-                        </div>
-                        <div class="forum-content">
-                            <div class="forum-content-header">
-                                <h2>Opinion: Album de sza</h2>
-                                <p>Por: <span>Usuario 1</span></p>
-                            </div>
-                            <div class="forum-content-body">
-                                <p>
-                                    El arte es una actividad humana que consiste en
-                                    la creación de obras de carácter estético,
-                                    que pueden ser expresadas mediante diferentes maneras.
-                                </p>
-                            </div>
-                            <div class="forum-content-footer">
-                                <p>Comentarios: <span>5</span></p>
-                                <p>Fecha de publicación: <span>01/01/2020</span></p>
+
+            </div>
+            <div class="container-fluid" id="aniadidoPubli">
+                <div id="aniadirPubliDiv" class="col-sm-12 collapse publi-editar">
+                    <form class="col-sm-12" action="forum.html" method="post">
+                        <div id="divAniadirA" class="col-lg-2 col-md-2 col-sm-12">
+                            <label >Categorías de la publicación: </label>
+                            <div id="cajaSelectTemas" >
+                                <input type="checkbox" id="pintura" value="Pintura">
+                                <label for="pintura"> Pintura</label><br>
+                                <input type="checkbox" id="musica"  value="Musica">
+                                <label for="musica"> Música</label><br>
+                                <input type="checkbox" id="cine"  value="Cine">
+                                <label for="cine"> Cine</label><br>
+                                <input type="checkbox" id="escultura" value="Escultura">
+                                <label for="escultura"> Escultura</label><br>
+                                <input type="checkbox" id="fotografia"  value="Fotografía">
+                                <label for="fotografia"> Fotografia</label><br>
+                                <input type="checkbox" id="literatura" value="Literatura">
+                                <label for="literatura"> Literatura</label><br>
                             </div>
                         </div>
-                        <div class="forum-content">
-                                <div class="forum-content-header">
-                                    <h2>Poema: Mi corazon necesita arte</h2>
-                                    <p>Por: <span>Usuario 1</span></p>
-                                </div>
-                                <div class="forum-content-body">
-                                    <p>
-                                        El arte es una actividad humana que consiste en
-                                        la creación de obras de carácter estético,
-                                        que pueden ser expresadas mediante diferentes maneras.
-                                    </p>
-                                </div>
-                                <div class="forum-content-footer">
-                                    <p>Comentarios: <span>5</span></p>
-                                    <p>Fecha de publicación: <span>01/01/2020</span></p>
-                                </div>
+                        <div id="divAniadirB" class="col-lg-10 col-md-10 col-sm-12">
+                            <div class="col-sm-12">
+                                <label for="titulo">Título</label>
+                                <input class="col-sm-12" type="text" id="titulo" name="titulo" placeholder="Título de la publicación">
+                            </div>
+
+                            <div class="col-sm-12">
+                                <label class="col-sm-12" for="contenido">Contenido</label>
+                                <textarea class="col-sm-12" id="contenido" name="contenido" rows="8" cols="50"></textarea>
+                            </div>
+                            <div id="subirPubli" class="col-sm-12">
+                                <input class="col-lg-3 col-sm-5 btnAniadirPub" type="submit" value="Añadir publicación">
+                            </div>
                         </div>
+                    </form>
                 </div>
             </div>
+            <div id="divTituloForo">
+                <h2>Foro de la comunidad</h2>
+            </div>
+
+            <div class="col-sm-12" id="container-publicaciones">
+                <div class="container" id="publicacion">
+                    <div class="row publicacion">
+                        <div class="col-md-1 col-xs-2 publi-icon-column">
+                            <span class="tag tag-pintura">Pintura</span>
+                        </div>
+                        <div class="col-md-6 col-xs-10 publi-title">
+                            <h2 data-toggle="collapse" data-target="#demo1" >Titulo de la publicación</h2>
+                        </div>
+                        <div class="col-md-3 col-xs-6 publi-datos">
+                            <p>autor de la publicación</p>
+                            <p>fecha de publicacion</p>
+                        </div>
+                        <div class="col-md-2 col-xs-6 publi-likes">
+                            <h3>1</h3>
+                            <button class="btnAniadirPub">me gusta</button>
+                        </div>
+
+                    </div>
+                    <div id="demo1" class="collapse row publi-contenido">
+                        <h2>AQUI VA EL CONTENIDO DE LA PUBLICACION</h2>
+                        <p>aamlksda awijfawf fafsef wefaofjawf qwfians awfainsf winasf awiscnzs fkanoi sfas acusca fa wfa saf aof awfaw fasf faq3w ra vzsfqawr sfasg we sfz fs</p>
+                    </div>
+
+                    <div class="row publicacion">
+                        <div class="col-md-1 col-xs-2 publi-icon-column">
+                            <span class="tag tag-pintura">Pintura</span>
+                        </div>
+                        <div class="col-md-6 col-xs-10 publi-title">
+                            <h2 data-toggle="collapse" data-target="#demo2" >Titulo de la publicación</h2>
+                        </div>
+                        <div class="col-md-3 col-xs-6 publi-datos">
+                            <p>autor de la publicación</p>
+                            <p>fecha de publicacion</p>
+                        </div>
+                        <div class="col-md-2 col-xs-6 publi-likes">
+                            <h3>1</h3>
+                            <button class="btnAniadirPub">me gusta</button>
+                        </div>
+                    </div>
+                    <div id="demo2" class="collapse row publi-contenido">
+                        <h2>AQUI VA EL CONTENIDO DE LA PUBLICACION</h2>
+                        <p>aamlksda awijfawf fafsef wefaofjawf qwfians awfainsf winasf awiscnzs fkanoi sfas acusca fa wfa saf aof awfaw fasf faq3w ra vzsfqawr sfasg we sfz fs</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 
+
 </main>
 <footer>
-    <div class="container">
-        <table class="default">
-            <tr>
-                <th>Contactos</th>
-                <th>Información legal</th>
-            </tr>
-            <tr>
-                <td>C. Tajo, s/n, 28670 Villaviciosa de Odón, Madrid</td>
-                <td>Política de privacidad</td>
-            </tr>
-            <tr>
-                <td>Teléfono: 674 092 029</td>
-                <td>Aviso legal</td>
-            </tr>
-            <tr>
-                <td>Correo electrónico: clubArte@gmail.com</td>
-                <td>Copyright</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>Cancelación de suscripción</td>
-            </tr>
-        </table>
-    </div>
+
 </footer>
 </body>
-<script src="js/forum.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </html>

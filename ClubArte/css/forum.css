@@ -1,189 +1,199 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@300;500;700&family=Silkscreen&display=swap');
-*{
-    /*border: red 1px solid;*/
 
-}
-html, body{
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
+*{
+
 }
 .banner{
     background-image: url("../imgs/bannerHeader.png");
-    background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
-    height: 300px;
+    background-position: center;
+    height: 350px;
+    margin-top: 20px;
     width: 100%;
-    margin: 0 0 40px 0;
-}
-.header{
-    background-color: #000;
-    height: 50px;
-    width: 100%;
-}
-
-.logo_index {
-    float: left;
-    width: 50px;
-    height: 50px;
-}
-
-#logo-usuario-barra-navegacion {
-    float: right;
-    width: 50px;
-    height: 50px;
-}
-
-.barra_navegacion {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left:0;
-    right: 0;
-    height: 60px;
-    background-color: black;
-    margin-bottom: 40px;
-    border-bottom: 0.1em solid white;
-}
-
-.barra_navegacion ul {
-    list-style: none;
-    text-align: center;
-}
-
-.barra_navegacion ul li {
-    display: inline-block;
-}
-
-.barra_navegacion ul li a {
-    display: block;
-    padding: 15px;
-    text-decoration: none;
-    color: #aaa;
-    font-weight: 800;
-    text-transform: uppercase;
-    margin: 0 10px;
-}
-
-.barra_navegacion ul li a:hover {
-    text-decoration: underline darkorange;
-}
-
-.logo_index:hover {
-    cursor: pointer;
-}
-
-#logo-usuario-barra-navegacion:hover {
-    cursor: pointer;
-}
-
-.forum{
-    display: flex;
+    justify-content: center;
     flex-direction: column;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#container-foro {
+    text-align: center;
+    margin-top: 0;
+    border: white 1px solid;
+}
+
+
+#aniadidoPubli{
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+#cajaSelectTemas{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+#subirPubli{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#divTituloForo{
+    display: flex;
+    justify-content: center;
+}
+
+.foro-encabezado{
+    font-size: 30px;
+    font-weight: 800;
+    color: #77A6B6;
+    margin-bottom: 20px;
+    text-align: center;
+    border: #6e0d25;
+}
+
+#div-clasificadores{
+    display: flex;
+    justify-content: right;
+    padding: 10px 10px 15px 0;
+    background: rgb(104,16,199);
+    background: linear-gradient(315deg, rgba(104,16,199,1) 0%, rgba(155,64,241,1) 35%, rgba(175,87,237,1) 100%);
+    box-shadow: grey 3px 2px 2px 2px;
+}
+#aniadirbtnDiv{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#aniadirPubliDiv{
+    border-radius: 5px;
+    box-shadow: grey 2px 1px 1px 1px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 0 10px 0;
+    background: rgb(104,16,199);
+    background: linear-gradient(315deg, rgba(104,16,199,1) 0%, rgba(155,64,241,1) 35%, rgba(175,87,237,1) 100%);
+    color: white;
+    font-size: medium;
+}
+
+#aniadirPubliDiv textarea{
+    color: black;
+}
+#titulo{
+    color: black;
+}
+
+.publicacion{
+    box-shadow: grey 2px 1px 1px 1px;
+    margin: 10px 0;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.publicacion div{
+    border: #AF57ED 1px solid;
+}
+
+
+.publi-img{
+    width: 80%;
+    height: 80%;
+}
+.publi-icon-column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+.publi-title{
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
-.container{
-    margin: 0 10px 0 10px;
-}
-.clasificaciones{
-    position: relative;
-    width: 25%;
-}
-.clasificaciones select{
-    display: none;
-}
-.select-selected{
-    background-color: firebrick;
-}
-/* Style the arrow inside the select element: */
-.select-selected:after {
-    position: absolute;
-    content: "";
-    top: 14px;
-    right: 10px;
-    width: 0;
-    height: 0;
-    border: 6px solid transparent;
-    border-color: #fff transparent transparent transparent;
-}
-
-/* Point the arrow upwards when the select box is open (active): */
-.select-selected.select-arrow-active:after {
-    border-color: transparent transparent #fff transparent;
-    top: 7px;
-}
-
-/* style the items (options), including the selected item: */
-.select-items div,.select-selected {
-    color: #ffffff;
-    padding: 8px 16px;
-    border: 1px solid transparent;
-    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+.publi-title h2:hover{
     cursor: pointer;
+    border-radius: 5px;
+    margin: 0 0 0 0;
+    text-decoration: #5081F9 underline;
 }
 
-/* Style items (options): */
-.select-items {
-    position: absolute;
-    background-color: firebrick;
-    top: 100%;
-    left: 0;
-    right: 0;
-    z-index: 99;
+.publi-datos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-/* Hide the items when the select box is closed: */
-.select-hide {
-    display: none;
-}
-
-.select-items div:hover, .same-as-selected {
-    background-color: rgba(0, 0, 0, 0.1);
-}
-
-.forum-container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 25px 25px;
-    margin: 10px 10px 20px 10px;
+.publi-likes button{
+    margin: 10px 0;
 
 }
 
-.forum-content{
-    background: firebrick;
-    color: #fff;
-    border-radius: 10px;
-    margin: 10px 0 0 0;
-    padding: 10px;
-    height: 92%;
-    width: 97%;
-    text-align: justify;
+.publi-contenido{
+    border-bottom: black 1px solid;
+    margin: 0 0 50px 0;
+    border-radius: 5px;
+    box-shadow: grey 2px 1px 1px 1px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 0 10px 0;
+    background: white;
 
 }
-footer{
-    text-align: center;
-    padding: 1px;
-    background-color: black;
+
+.btnAniadirPub{
+    background: rgb(40,165,253);
+    background: linear-gradient(315deg, rgba(40,165,253,1) 0%, rgba(80,129,249,1) 35%, rgba(116,97,245,1) 100%);
+    border: white 0.5px solid;
+    border-radius: 5px;
     color: white;
+    text-transform: uppercase;
+    padding: 2px 15px;
 }
 
-table{
-    margin: 5%;
-    padding-left: 60%;
+.btnAniadirPub:hover{
+    background: rgb(40,165,253);
+    background: linear-gradient(315deg, rgba(116,97,245,1) 0%, rgba(80,129,249,1) 100%, rgba(40,165,253,1) 35%);
+    border: white 0.5px solid;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    padding: 2px 15px;
+    box-shadow: gray 2px 1px 1px 1px;
 }
 
 
-@media screen and (max-width: 800px){
-    .banner{
-        height: 200px;
+
+
+@media screen and (max-width: 768px) {
+    .banner {
+        height: 190px;
+        margin-top: 20px;
     }
-    .forum-container{
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(4, 1fr);
+    .publi-img{
+        width: 100%;
+        height: 70%;
     }
+    .nav-links a{
+        font-weight: 600;
+    }
+    #cajaSelectTemas{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #div-clasificadores{
+        justify-content: right;
+        font-size: x-small;
+    }
+
 }
