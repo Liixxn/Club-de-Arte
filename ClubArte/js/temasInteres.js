@@ -1,6 +1,6 @@
 let imageIndex = 0;
 
-let imageArray = ["imgs/portada_1.jpg", "imgs/1586283508_022049_1586284162_noticia_normal_recorte1.jpg", "imgs/16474297191037.jpg"];
+let imageArray = ["imgs/7.png", "imgs/8.png", "imgs/9.png", "imgs/10.png", "imgs/11.png", "imgs/12.png"];
 
 function changeImage() {
 
@@ -15,10 +15,7 @@ function changeImage() {
 
 $(function() {
     
-    setInterval(changeImage, 2000);
+    setInterval(changeImage, 3000);
     
 });
 
-//myImage.onclick = function() {
-//    clearInterval(intervalHandle);
-//};

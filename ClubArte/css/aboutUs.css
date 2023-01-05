@@ -1,3 +1,8 @@
+/*{
+    border: red 1px solid;
+
+}*/
+
 /*header*/
 .logo_index {
     float: left;
@@ -67,32 +72,23 @@ body {
 
 /*body*/
 
+html, body {
+    margin:0;
+    padding:0;
+    background-color: #dec6fc;
+
+}
+
 #banner{
     display: flex;
     position: relative;
-    background-image: url("../imgs/colores-800x445.jpg");
+    background-image: url("../imgs/6.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 50vh;
     width: 100%;
     margin-top: 60px;
-}
-
-#banner #titulo {
-    border: 2px solid white;
-    color: white;
-    background-color: rgb(115, 60, 175);
-    position: relative;
-    top: 10vh;
-    margin: 0 auto;
-    width: 20%;
-    height: 12vh;
-    padding: 25px;
-    text-align: center;
-    font-size: 48px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bold;
 }
 
 h2{
