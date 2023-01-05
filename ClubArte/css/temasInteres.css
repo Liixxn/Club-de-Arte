@@ -1,8 +1,22 @@
+/*{
+    border: red 1px solid;
+
+}*/
+
 /*header*/
+
 .logo_index {
     float: left;
     width: 50px;
     height: 50px;
+}
+
+body {
+    z-index: 1;
+}
+
+.navigation_bar {
+    z-index:2;
 }
 
 #logo_user_navigation_bar {
@@ -64,10 +78,15 @@
     grid-template-columns: auto auto;
     gap: 15px;
     padding: 15px;
-    background-color: rgb(115, 60, 175);
+    background-color: white;
 }
 
-.caja_texto{
+.caja_foro{
+    text-align: center;
+    background-color: white;
+}
+
+.caja_actividades{
     text-align: center;
     background-color: white;
 }
@@ -88,8 +107,10 @@
     background-image: url("../imgs/portada_1.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    height: 300px;
+    background-size: contain;
+    background-size: 900px;
+    background-color: #F2BFF2;
+    height: 500px;
     width: 100%;
 }
 
@@ -107,3 +128,203 @@ table{
     padding-left: 60%;
 }
 
+.forum{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    margin: 0 10px 0 10px;
+}
+.clasificaciones{
+    position: relative;
+    width: 25%;
+}
+.clasificaciones select{
+    display: none;
+}
+.select-selected{
+    background-color: firebrick;
+}
+/* Style the arrow inside the select element: */
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+    position: absolute;
+    background-color: firebrick;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.forum-container{
+    display: grid;
+    grid-gap: 25px 25px;
+    margin: 10px 10px 20px 10px;
+}
+
+.forum-content{
+    background: firebrick;
+    color: white;
+    border-radius: 10px;
+    margin: 10px 0 0 0;
+    padding: 10px;
+    height: 92%;
+    width: 97%;
+    text-align: justify;
+
+}
+
+@media screen and (max-width: 800px){
+    .banner{
+        height: 200px;
+    }
+    .forum-container{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
+
+/*Pasa imagenes*/
+
+.slide {
+    position: relative;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+    margin-top: 26px;
+}
+.slide-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: calc( 300px + 3em);
+}
+.slide-open:checked + .slide-item {
+    position: static;
+    opacity: 100;
+}
+.slide-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+.slide-item img {
+    display: block;
+    margin: auto;
+    height: 100%;
+    max-width: 100%;
+}
+.slide-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+.slide-control.prev {
+    left: 2%;
+}
+.slide-control.next {
+    right: 2%;
+}
+.slide-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+#slide-1:checked ~ .control-1,
+#slide-2:checked ~ .control-2,
+#slide-3:checked ~ .control-3 {
+    display: block;
+}
+.slide-indicador {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+.slide-indicador li {
+    display: inline-block;
+    margin: 0 5px;
+}
+.slide-circulo {
+    color: #828282;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+.slide-circulo:hover {
+    color: #aaaaaa;
+}
+#slide-1:checked ~ .control-1 ~ .slide-indicador 
+     li:nth-child(1) .slide-circulo,
+#slide-2:checked ~ .control-2 ~ .slide-indicador 
+      li:nth-child(2) .slide-circulo,
+#slide-3:checked ~ .control-3 ~ .slide-indicador 
+      li:nth-child(3) .slide-circulo {
+    color: #428bca;
+}
+#titulo {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 27px;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans', sans-serif;
+    z-index: 9999;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), 
+        -1px 0px 2px rgba(255, 255, 255, 0);
+}
