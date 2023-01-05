@@ -73,45 +73,46 @@ body {
 
 /*body*/
 
+html, body, cajas{
+    margin:0;
+    padding:0;
+    background-color: #dec6fc;
+
+}
+
 .cajas{
     display: grid;
     grid-template-columns: auto auto;
     gap: 15px;
     padding: 15px;
-    background-color: white;
+    background-color: #dec6fc;
 }
 
 .caja_foro{
     text-align: center;
-    background-color: white;
+    background-color: #dec6fc;
 }
 
 .caja_actividades{
     text-align: center;
-    background-color: white;
+    background-color: #dec6fc;
 }
 
 #actividades{
-    background-color: white;
+    background-color: #dec6fc;
     width: 50%;
     padding: 5%;
     padding-left: 5%;
 }
 
-#mainImage{
-    height: 50%;
-    width: 100%;
-}
-
 #banner {
-    background-image: url("../imgs/portada_1.jpg");
+    background-image: url("../imgs/7.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    background-size: 900px;
-    background-color: #F2BFF2;
-    height: 500px;
+    height: 50vh;
     width: 100%;
+    margin-top: 60px;
 }
 
 /*footer*/
