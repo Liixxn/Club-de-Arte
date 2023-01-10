@@ -140,11 +140,11 @@ background-color: #474e5d;
 color: white;
 }
 
-.container {
+.contenedor-footer {
 padding: 0 16px;
 }
 
-.container::after, .row::after {
+.contenedor-footer::after, .fila-footer::after {
 content: "";
 clear: both;
 display: table;

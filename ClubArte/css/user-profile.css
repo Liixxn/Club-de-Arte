@@ -209,20 +209,6 @@ body {
 
 
 
-/* CALENDARIO */
-#container-calendar {
-    margin: 20px;
-}
-#titulo_calendario {
-    text-align: center;
-}
-
-
-
-
-
-
-
 
 
 
@@ -339,6 +325,32 @@ body {
 
 
 
+
+
+
+
+/* PUBLICACIONES */
+
+#secccion_publicaciones {
+    margin-top: 500px;
+}
+
+.layout-publicaciones {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+    grid-gap: 2em;
+    padding: 2em;
+    pointer-events: none;
+
+}
+.layout-publicaciones img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: .25em;
+    transition: 250ms 50ms;
+    pointer-events: auto;
+}
 
 
 
