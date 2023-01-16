@@ -1,0 +1,151 @@
+*, html{
+    background-color: rgba(255, 255, 255, 0);
+}
+html, body{
+    background-color: #DEC6FC;
+    height:100%;
+    width:100%;
+
+}
+
+
+main{
+
+    height: 100%;
+    background-color: #DEC6FC;
+
+}
+.div-header-registro{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: medium;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: #000000;
+}
+.div-header-registro *{
+    background-color: #000000;
+}
+.div-header-registro a{
+    text-decoration: none;
+
+}
+
+#img-logo-home{
+    width: 50px;
+    height: 50px;
+}
+
+
+
+#div-inicio-sesion{
+    margin-left: auto;
+    margin-right: 10px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    text-align: center;
+
+}
+#div-inicio-sesion p{
+    margin: 0 10px;
+    font-size: small;
+}
+
+#div-inicio-sesion input{
+
+    width: 99%;
+}
+
+#main-registro {
+
+    background-color: #7461F5;
+}
+.div-main-registro{
+    background-color: #DEC6FC;
+
+}
+
+#div-informacion{
+    text-align: center;
+    margin-top: 50px;
+    background-color: #DEC6FC;;
+
+}
+#img-informacion{
+    width: 370px;
+    height: 300px;
+    margin-top: 60px;
+    box-shadow: gray 2px 1px 1px 1px;
+}
+#img-informacio:hover{
+    width: 400px;
+    height: 330px;
+}
+
+
+#div-form-registro{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    border-left: rgba(255, 255, 255, 0.75) 2px solid;
+    background-color: #DEC6FC;
+}
+#div-titulo-registro{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#div-inputs-registro{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 0 0 0;
+    background-color: rgba(116, 97, 245, 0.65);
+    box-shadow: gray 2px 1px 1px 1px;
+}
+
+.div-inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 15px auto;
+    font-size: small;
+}
+.div-inputs label{
+
+
+    margin: 0 0 5px 0;
+    font-weight: bold;
+}
+
+
+.div-inputs input{
+    background-color: white;
+    border-radius: 3px;
+    border: 1px solid rgba(4, 0, 0, 0.6);
+    box-shadow: gray 2px 1px 1px 1px;
+}
+
+
+#div-btn-registro {
+    margin: 20px auto;
+    text-align: center;
+}
+#btn-registrar:hover{
+    box-shadow: gray 2px 1px 1px 1px;
+}
+
+
+@media screen and (max-width: 990px) {
+    #div-form-registro{
+        border-left: none;
+    }
+    #div-form-registro{
+        padding-top: 20px;
+        border-top: 1px solid rgba(4, 0, 0, 0.6);
+    }
+    #img-informacion{
+        margin: 30px 0 30px 0 ;
+    }
+}
