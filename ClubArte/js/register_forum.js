@@ -6,7 +6,7 @@ const IMAGENES = [
 ];
 const TIEMPO_INTERVALO_MILESIMAS_SEG = 3000;
 let posicionActual = 0;
-let carrusel = document.getElementById('logoClub');
+let carrusel = document.getElementById('img-informacion');
 
 
 function pasarImagenes() {
