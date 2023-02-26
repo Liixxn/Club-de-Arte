@@ -1,0 +1,334 @@
+
+*{
+
+}
+.banner{
+    background-image: url("../imgs/bannerHeader.png");
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#container-foro {
+    text-align: center;
+    margin-top: 0;
+    border: white 1px solid;
+}
+
+
+#aniadidoPubli{
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+#cajaSelectTemas{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+#subirPubli{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#divTituloForo{
+    display: flex;
+    justify-content: center;
+}
+
+.foro-encabezado{
+    font-size: 30px;
+    font-weight: 800;
+    color: #77A6B6;
+    margin-bottom: 20px;
+    text-align: center;
+    border: #6e0d25;
+}
+
+#div-clasificadores{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 10px 15px 0;
+    background: rgb(104,16,199);
+    background: linear-gradient(315deg, rgba(104,16,199,1) 0%, rgba(155,64,241,1) 35%, rgba(175,87,237,1) 100%);
+    box-shadow: grey 3px 2px 2px 2px;
+}
+#aniadirbtnDiv{
+    display: flex;
+    justify-content: center;
+}
+
+#cancelarPubliDiv{
+    display: flex;
+    justify-content: right;
+}
+#cancelAniadirPub{
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 100%;
+    border: none;
+    padding: 5px 10px;
+}
+#cancelAniadirPub:hover{
+    background-color: rgba(255, 255, 255, 15%);
+    border-radius: 100%;
+    border: none;
+    padding: 5px 10px;
+}
+
+#errorCategoriasDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+#errorSubir{
+    background-color: rgba(255,69,0,0.35);
+}
+
+
+
+
+
+
+
+#aniadirPubliDiv{
+    border-radius: 5px;
+    box-shadow: grey 2px 1px 1px 1px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 0 10px 0;
+    background: rgb(104,16,199);
+    background: linear-gradient(315deg, rgba(104,16,199,1) 0%, rgba(155,64,241,1) 35%, rgba(175,87,237,1) 100%);
+    color: white;
+    font-size: medium;
+}
+
+#aniadirPubliDiv textarea{
+    color: black;
+}
+#titulo{
+    color: black;
+}
+
+#container-publicaciones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+}
+
+.publicacion{
+    box-shadow: grey 2px 1px 1px 1px;
+    margin: 10px 0;
+    width: 95%;
+    background-color: white;
+    border-radius: 20px;
+}
+
+
+
+
+
+.publi-icon-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: #AF57ED 2px solid;
+    border-bottom: #AF57ED 2px solid;
+    border-bottom-left-radius: 20px;
+    padding: 10px;
+}
+
+.publi-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+
+}
+
+.tema{
+    font-size: 40px;
+}
+
+
+.publi-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: #AF57ED 2px solid;
+    border-bottom: #AF57ED 2px solid;
+}
+.publi-title h2:hover{
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: #5081F9 underline;
+}
+
+.publi-datos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: #AF57ED 2px solid;
+}
+.publi-likes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+}
+.publi-likes div{
+    border: 0;
+}
+
+
+
+
+.publi-contenido{
+    border-bottom: black 1px solid;
+    margin: 0 0 50px 0;
+    border-radius: 5px;
+    box-shadow: grey 2px 1px 1px 1px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 0 10px 0;
+    background: white;
+
+}
+
+.btnAniadirPub{
+    background: rgb(40,165,253);
+    background: linear-gradient(315deg, rgba(40,165,253,1) 0%, rgba(80,129,249,1) 35%, rgba(116,97,245,1) 100%);
+    border: white 0.5px solid;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    padding: 2px 15px;
+}
+
+.btnAniadirPub:hover{
+    background: rgb(40,165,253);
+    background: linear-gradient(315deg, rgba(116,97,245,1) 0%, rgba(80,129,249,1) 100%, rgba(40,165,253,1) 35%);
+    border: white 0.5px solid;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    padding: 2px 15px;
+    box-shadow: gray 2px 1px 1px 1px;
+}
+
+
+
+
+@media screen and (max-width: 980px) {
+    .banner {
+        height: 190px;
+        margin-top: 20px;
+    }
+    .publi-img{
+        width: 100%;
+        height: 70%;
+    }
+    .nav-links a{
+        font-weight: 600;
+    }
+    #cajaSelectTemas{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #div-clasificadores{
+        justify-content: right;
+        font-size: x-small;
+    }
+    .publi-icon-column{
+        font-size: x-small;
+        border-bottom-left-radius: 0;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+    width: 55px;
+    margin: 0 20px;
+    color: #333;
+    background: #fff;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
+    cursor: pointer;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: 250ms color;
+    -webkit-transition: 250ms color;
+    -moz-transition: 250ms color;
+    -ms-transition: 250ms color;
+    -o-transition: 250ms color;
+}
+
+.liked {
+    color: #9B40F1;
+    animation-name: heart-like;
+    animation-duration: 250ms;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    box-shadow: 0 0 15px 2px blueviolet;
+}
+
+.unliked {
+    animation-name: heart-unlike;
+    animation-duration: 250ms;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes heart-like {
+    0% { transform: scale(1); -webkit-transform: scale(1); -moz-transform: scale(1); -ms-transform: scale(1); -o-transform: scale(1); }
+    50% { transform: scale(1.3); -webkit-transform: scale(1.3); -moz-transform: scale(1.3); -ms-transform: scale(1.3); -o-transform: scale(1.3); }
+    100% { transform: scale(1); -webkit-transform: scale(1); -moz-transform: scale(1); -ms-transform: scale(1); -o-transform: scale(1); }
+}
+
+@keyframes heart-unlike {
+    0% { transform: scale(1); -webkit-transform: scale(1); -moz-transform: scale(1); -ms-transform: scale(1); -o-transform: scale(1); }
+    50% { transform: scale(.7); -webkit-transform: scale(.7); -moz-transform: scale(.7); -ms-transform: scale(.7); -o-transform: scale(.7); }
+    100% { transform: scale(1); -webkit-transform: scale(1); -moz-transform: scale(1); -ms-transform: scale(1); -o-transform: scale(1); }
+}

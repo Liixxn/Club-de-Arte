@@ -1,0 +1,147 @@
+html,body,divContenidoLogin{
+    height:100%;
+    width:100%;
+}
+
+
+.divContenidoLogin{
+
+    border: #0c4128 2px solid;
+}
+main{
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.div-header-login{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: medium;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: #000000;
+    padding-left: 10px;
+}
+.div-header-login *{
+    background-color: #000000;
+}
+.div-header-login a{
+    text-decoration: none;
+
+}
+
+#img-logo-home{
+
+    width: 50px;
+    height: 50px;
+}
+
+
+
+#div-inicio-sesion{
+    margin-left: auto;
+    margin-right: 10px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    text-align: center;
+
+}
+#div-inicio-sesion p{
+    margin: 0 10px;
+    font-size: small;
+}
+
+#div-inicio-sesion input{
+    width: 99%;
+    padding: 5px;
+}
+
+#main-login {
+
+    background-color: #dec6fc;
+    height: 100%;
+}
+.div-main-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://i.pinimg.com/originals/50/e5/e0/50e5e0d3c3c349cd5a29681ccfcb55a1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    height: 100%;
+}
+
+
+
+
+#div-form-login{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: gray 2px 2px 2px 2px;
+
+}
+#div-titulo-login{
+    text-align: center;
+    background-color: white;
+}
+
+#div-inputs-login{
+    display: grid;
+    grid-template-columns: 1fr ;
+    margin: 0 0 0 0;
+    background-color: white;
+
+    color: rgba(4, 0, 0, 0.65);
+}
+
+.div-inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 15px auto;
+}
+.div-inputs label{
+    margin: 0 0 5px 0;
+    align-self: center;
+    font-weight: bold;
+}
+
+
+.div-inputs input{
+    background-color: white;
+    border-radius: 3px;
+    border: 1px solid rgba(4, 0, 0, 0.6);
+    box-shadow: gray 2px 1px 1px 1px;
+}
+
+
+#div-btn-login {
+    margin: 20px auto;
+    text-align: center;
+}
+#btn-login:hover{
+    box-shadow: gray 2px 1px 1px 1px;
+}
+
+footer{
+    background-color: #dec6fc;
+}
+
+@media screen and (max-width: 990px) {
+    #div-form-login{
+        border-left: none;
+    }
+    #div-form-login{
+        padding-top: 20px;
+        border-top: 1px solid rgba(4, 0, 0, 0.6);
+    }
+
+}
