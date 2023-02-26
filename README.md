@@ -37,4 +37,20 @@ se utilizó HTLM, CSS, JavaScript, PHP y una base de datos local.</p>
 
 <hr>
 
+<p> En cada página se encuentran diferentes banners que representan aquello que se muestra en cada sitio</p>
+
+<h3 align="center">Banners</h3>
+<div align="center">
+  <img src="https://github.com/Liixxn/Club-de-Arte/blob/main/ClubArte2/readme_images/bannerPrincipal.png" alt="Banner de ejemplo de la página principal" width="60%" height="60%">
+</div>
+
+<h3 align="center">Calendario de eventos</h3>
+<div align="center">
+  <img src="https://github.com/Liixxn/Club-de-Arte/blob/main/ClubArte2/readme_images/calendarioEventos.png" alt="Calendario de eventos" width="60%" height="60%">
+</div>
+
+<h3 align="center">Foro</h3>
+<div align="center">
+  <img src="https://github.com/Liixxn/Club-de-Arte/blob/main/ClubArte2/readme_images/foro.png" alt="Foro del club" width="60%" height="60%">
+</div>
 
